@@ -6,12 +6,14 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
+import java.util.Scanner;
 
 public class Update {
 	
 	public static void updateStatic() {
 		Connection connection=null;
 		Statement statement=null;
+		Scanner sc= new Scanner(System.in);
 		try {
 			FileInputStream file= new FileInputStream("directory.properties");
 			Properties properties= new Properties();
