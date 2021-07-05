@@ -62,7 +62,7 @@ public class StudentMain {
 			case 1:
 				InsertDynamic.insertDynamicQuery();
 				break;
-			case 2:System.out.println("What do you want to update:");
+			case 2:System.out.println("What do you want to update:\n");
 				System.out.println("n:Name\ts:Standard\tm:Marks\td:Date of Birth");
 				String option=scanner.next();
 				UpdateDynamic.updateDyanmicQuery(option);
