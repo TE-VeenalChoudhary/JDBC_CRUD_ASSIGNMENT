@@ -9,7 +9,7 @@ import java.util.Properties;
 
 public class Update {
 	
-	public static void updateStatic(String choice) {
+	public static void updateStatic() {
 		Connection connection=null;
 		Statement statement=null;
 		try {
@@ -24,6 +24,9 @@ public class Update {
 			connection = DriverManager.getConnection(dburl, user, password);
 			
 			statement=connection.createStatement();
+			System.out.println("What do you want to update:");
+			System.out.println("n:Name\ts:Standard\tm:Marks\td:Date of Birth");
+			String choice=sc.next();
 			if (choice.charAt(0)=='n') {
 				String query=properties.getProperty("queryUpdateName");
 				statement=connection.prepareStatement(query);
