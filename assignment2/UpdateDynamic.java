@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class UpdateDynamic {
 
-	public static void updateDyanmicQuery(String choice) {
+	public static void updateDyanmicQuery() {
 
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Enter the ID you want to update: ");
@@ -31,7 +31,9 @@ public class UpdateDynamic {
 			Class.forName(driver);
 			connection = DriverManager.getConnection(dburl, user, password);
 			
-			
+			System.out.println("What do you want to update:");
+			System.out.println("n:Name\ts:Standard\tm:Marks\td:Date of Birth");
+			String choice=sc.next();
 			if (choice.charAt(0)=='n') {
 				System.out.println("Enter the updated name: ");
 				String name=sc.next();
