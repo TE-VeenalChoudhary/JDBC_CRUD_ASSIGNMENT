@@ -21,7 +21,7 @@ public class InsertDynamic {
 		String standard=sc.next();
 		System.out.println("Enter the Marks of student: ");
 		String marks=sc.next();
-		System.out.println("Enter the Date of Birth of student: ");
+		System.out.println("Enter the Date of Birth of student: (YYYY-MM-DD) ");
 		String date=sc.next();
 		
 		Connection connection=null;
