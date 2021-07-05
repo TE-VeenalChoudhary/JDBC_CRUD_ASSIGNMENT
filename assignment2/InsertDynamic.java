@@ -50,7 +50,7 @@ public class InsertDynamic {
 			int result=prepare.executeUpdate();
 			
 			if (result!=0) {
-				System.out.println("Data Inserted successfully");
+				System.out.println("\nData Inserted successfully");
 			}
 			
 		} catch (Exception e) {
