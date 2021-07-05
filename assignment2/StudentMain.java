@@ -46,7 +46,7 @@ public class StudentMain {
 			case 4:
 				Select.selectStatic();
 				break;
-			default:
+			default: System.out.println("Invalid Choice ");
 				break;
 			}
 			break;
@@ -73,12 +73,13 @@ public class StudentMain {
 			case 4:
 				SelectDynamic.selectDynamicQuery();
 				break;
-			default:
+			default:System.out.println("Invalid Choice ");
 				break;
 			}
 			break;
 			
-		case 3:System.exit(0);
+		case 3:System.out.println("\nThank You");
+			System.exit(0);
 			break;
 		default:System.out.println("Invalid choice");
 			break;
@@ -88,6 +89,7 @@ public class StudentMain {
 		System.out.println("Enter 'y' for yes or 'n' for no: ");
 		opt = scanner.next().charAt(0);
 	} while (opt != 'n');
+	System.out.println("\nThank You");
 	}
 
 }
