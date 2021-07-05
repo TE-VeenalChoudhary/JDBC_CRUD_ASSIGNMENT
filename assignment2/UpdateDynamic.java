@@ -54,7 +54,7 @@ public class UpdateDynamic {
 				prepare.setInt(2, id);
 				prepare.setDouble(1, marks);
 			}else if(choice.charAt(0)=='d') {
-				System.out.println("Enter the updated Date of birth: ");
+				System.out.println("Enter the updated Date of birth: (YYYY-MM-DD) ");
 				String date=sc.next();
 				String query=properties.getProperty("queryUpdateDynamicDate");
 				prepare=connection.prepareStatement(query);
